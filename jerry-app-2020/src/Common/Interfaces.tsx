@@ -1,6 +1,5 @@
 export interface IUserInput
 {
-    SearchQuery: (string | null);
-    StartDate: (Date | null);
-    EndDate: (Date | null);
+    UsernameQuery: (string | null);
+    TimePeriod: (string | null);
 }
