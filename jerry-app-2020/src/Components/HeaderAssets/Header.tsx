@@ -6,7 +6,7 @@ function Header()
     return (
         <div className="header">
             <div>
-                <h1>Search for Most Popular Articles from <span id="nyt">The New York Times</span></h1>
+                <h1>Articles from <span id="nyt">The New York Times</span></h1>
                 <div>
                     <h3>API:  <a href="https://developer.nytimes.com/docs/most-popular-product/1/overview">https://developer.nytimes.com/docs/most-popular-product/1/overview</a></h3>
                     
