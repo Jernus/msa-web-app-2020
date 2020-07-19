@@ -33,18 +33,19 @@ function MediaCard(props: IMediaCardProps)
                         title={props.ImageUrl}
                         className="MediaCardImage"
                     />
-
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2" className="MediaCardTitle">
-                            {props.Title}
-                        </Typography>
-                        <br></br>
-                        <Typography variant="body2" color="textSecondary" component="p" className="MediaCardAbstract">
-                            {props.Abstract}
-                        </Typography>
+                    <CardContent className="card-body">
+                        <div>
+                            <Typography gutterBottom variant="h5" component="h2" className="MediaCardTitle">
+                                {props.Title}
+                            </Typography>
+                        </div>
+                        <div>
+                            <Typography variant="body2" color="textSecondary" component="p" className="MediaCardAbstract">
+                                {props.Abstract}
+                            </Typography>
+                        </div>
                     </CardContent>
                 </CardActionArea>
-
                 <CardActions>
                     <Button size="small" color="primary" href={props.ArticleUrl}>
                         Learn More

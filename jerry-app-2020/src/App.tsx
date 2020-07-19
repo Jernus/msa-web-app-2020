@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './Components/HeaderAssets/Header';
 import SearchBar from './Components/SearchBarAssets/SearchBar';
+import ResultMessage from './Components/ResultMessageAssets/ResultMessage';
 import MediaGrid from './Components/MediaGridAssets/MediaGrid';
 
 import {IUserInput} from './Common/Interfaces';
@@ -42,6 +43,7 @@ function App()
       <MuiThemeProvider theme={theme}>
         <Header/>
         <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
+        <ResultMessage UsernameQuery={UserInput.UsernameQuery} TimePeriod={UserInput.TimePeriod}/>
         <MediaGrid UsernameQuery={UserInput.UsernameQuery} TimePeriod={UserInput.TimePeriod}/>
       </MuiThemeProvider>
     </div>

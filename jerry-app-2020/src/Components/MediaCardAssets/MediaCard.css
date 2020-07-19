@@ -2,11 +2,14 @@
 {
     max-width: 310px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 110%;
 }
 
 .MediaCardImage
 {
-    height: 200px !important;
+    height: 140px !important;
     max-width: 310px;
 }
 
@@ -15,4 +18,32 @@
     height: 200px;
     overflow-y: scroll;
     overflow-wrap: break-word;
+}
+
+.card-body
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MediaCardTitle
+{
+    margin-top: 0px;
+}
+
+.MediaCardAbstract
+{
+    text-align: left;
+}
+
+.MuiGrid-root div button div div
+{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.MuiGrid-root div
+{
+    justify-content: flex-start;
 }
