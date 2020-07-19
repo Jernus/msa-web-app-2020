@@ -19,3 +19,29 @@ h1
 {
     color: #fbb901;
 }
+
+#api
+{
+    font-family: 'Playball', cursive;
+    color: #e0e9e9;
+}
+
+#api-link
+{
+    transition: 0.5s;
+}
+
+#api-link:link
+{
+    color: 	#b5f4f4;
+}
+
+#api-link:visited
+{
+    color: 	#ffff72;
+}
+
+#api-link:hover
+{
+    color: 	#ce0018;
+}
