@@ -3,18 +3,12 @@ import './SearchBar.css';
 
 import {Grid, TextField, Button} from '@material-ui/core';
 
-import {KeyboardDatePicker, MuiPickersUtilsProvider} from '@material-ui/pickers';
-import DateFnsUtils from '@date-io/date-fns';
-
 import {IUserInput} from '../../Common/Interfaces';
-import { datePickerDefaultProps } from '@material-ui/pickers/constants/prop-types';
 
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
 interface ISearchBarProps
 {
@@ -53,52 +47,13 @@ function SearchBar(props: ISearchBarProps)
         }
     }
 
-
-
-
-
-
     const [HasFocus, setHasFocus] = useState<boolean>(false);
-
-    const [StartDate, setStartDate] = useState<Date | null>(new Date('2019-01-01'),);
-    const [EndDate, setEndDate] = useState<Date | null>(new Date('2020-01-01'),);
-
-    const handleStartDateChange = (date: Date | null) =>
-    {
-        setStartDate(date);
-    }
-    const handleEndDateChange = (date: Date | null) =>
-    {
-        setEndDate(date);
-    }
-
-    
-
-
-
-
-//     const useStyles = makeStyles((theme: Theme) =>
-//   createStyles({
-//     formControl: {
-//       margin: theme.spacing(1),
-//       minWidth: 120,
-//     },
-//     selectEmpty: {
-//       marginTop: theme.spacing(2),
-//     },
-//   }),
-// );
-
-
-
-
-
-
 
     return (
         <div className="SearchBarContainer">
-            <Grid container spacing={1}>
-                <Grid item xs={6} sm={3}>
+            <div>
+            <Grid container spacing={1} justify="center" direction="row" alignItems="center">
+                <Grid item xs={6} sm={2} id="username-field">
                     <TextField
                         required
                         id="username"
@@ -111,7 +66,7 @@ function SearchBar(props: ISearchBarProps)
                     />
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={6} sm={3} id="time-field">
                     <FormControl>
                         <InputLabel>Time Period</InputLabel>
                         <Select 
@@ -125,115 +80,16 @@ function SearchBar(props: ISearchBarProps)
                     </FormControl>
                 </Grid>
 
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={6} sm={1} id="submit-button">
                     <Button variant="contained" color="primary" onClick={handleSubmit}>
                         Search
                     </Button>
                 </Grid>
             </Grid>
+            </div>
+            
         </div>
     )
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // <div className="SearchBarContainer">
-    //         <Grid container spacing={3}>
-    //             <Grid item xs={12} sm={3}>
-    //                 <FormControl>
-    //                     <InputLabel htmlFor="age-native-simple">Age</InputLabel>
-    //                         <Select
-    //                         style={{width: `200px`}}
-    //                         inputProps={{
-    //                             name: 'age',
-    //                             id: 'age-native-simple',
-    //                         }}
-    //                         >
-    //                         <option aria-label="None" value="" />
-    //                         <option value={10}>Ten</option>
-    //                         <option value={20}>Twenty</option>
-    //                         <option value={30}>Thirty</option>
-    //                         </Select>
-    //                 </FormControl>
-    //             </Grid>
-            
-    //         {/* <FormControl>
-    //             <InputLabel id="input-label">Time Period</InputLabel>
-    //                 <Select>
-    //                 <option aria-label="None" value="" />
-    //                 <option value={1}>1 day</option>
-    //                 <option value={7}>7 days</option>
-    //                 <option value={30}>30 days</option>
-    //                 </Select>
-    //         </FormControl> */}
-    //             {/* <Grid item xs={6} sm={3}>
-    //                 <TextField
-    //                     required
-    //                     id="outlined-required"
-    //                     label="Search"
-    //                     variant="outlined"
-    //                     error={HasFocus && SearchQuery === ""}
-    //                     onClick={() => setHasFocus(true)}
-    //                     value={SearchQuery}
-    //                     onChange={e => handleSearchQueryChange(e.target.value)}
-    //                 />
-    //             </Grid>
-
-    //             <MuiPickersUtilsProvider utils={DateFnsUtils}>
-    //                 <Grid item xs={6} sm={3}>
-    //                     <KeyboardDatePicker
-    //                         disableToolbar
-    //                         variant="inline"
-    //                         format="MM/dd/yyyy"
-    //                         margin="normal"
-    //                         id="StartDate"
-    //                         label="Start Date (optional)"
-    //                         value={StartDate}
-    //                         onChange={handleStartDateChange}
-    //                         KeyboardButtonProps=
-    //                         {
-    //                             {'aria-label': 'change date',}
-    //                         }
-    //                     />
-    //                 </Grid>
-    //                 <Grid item xs={6} sm={3}>
-    //                     <KeyboardDatePicker
-    //                         disableToolbar
-    //                         variant="inline"
-    //                         format="MM/dd/yyyy"
-    //                         margin="normal"
-    //                         id="EndDate"
-    //                         label="End Date (optional)"
-    //                         value={EndDate}
-    //                         onChange={handleEndDateChange}
-    //                         KeyboardButtonProps=
-    //                         {
-    //                             {'aria-label': 'change date',}
-    //                         }
-    //                     />
-    //                 </Grid>
-    //             </MuiPickersUtilsProvider>
-
-    //              */}
-
-    //             <Grid item xs={6} sm={3}>
-    //                 <Button variant="contained" color="primary" onClick={handleSubmit}>
-    //                     Search
-    //                 </Button>
-    //             </Grid>
-    //         </Grid>
-    //     </div>
 }
 
 export default SearchBar;

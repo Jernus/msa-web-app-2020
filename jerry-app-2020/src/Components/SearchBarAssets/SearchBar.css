@@ -2,6 +2,7 @@
 {
     margin: auto;
     margin: 20px;
+    justify-content: center;
 }
 
 .MuiGrid-root div
@@ -11,13 +12,7 @@
     justify-content: center;
 }
 
-#input-label
+#username-field, #time-field, #submit-button
 {
-    width: 30px;
-}
-
-.interat-part
-{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 13px;
 }

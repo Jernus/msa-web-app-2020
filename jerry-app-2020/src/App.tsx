@@ -29,8 +29,8 @@ const theme = createMuiTheme(
 function App() 
 {
   const [UserInput, setUserInput] = useState<IUserInput>({
-    UsernameQuery: "Jernus",
-    TimePeriod: "30",
+    UsernameQuery: "User",
+    TimePeriod: "7",
   });
 
   function SetUserInput(a: IUserInput)
