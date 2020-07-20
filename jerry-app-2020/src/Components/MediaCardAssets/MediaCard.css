@@ -22,7 +22,7 @@
 
 .card-body
 {
-    height: 250px;
+    height: 270px;
     display: flex;
     flex-direction: column;
 }
@@ -46,4 +46,10 @@
 .MuiGrid-root div
 {
     justify-content: flex-start;
+}
+
+.MuiTypography-h5
+{
+    font-size: 1rem;
+    font-weight: bold;
 }

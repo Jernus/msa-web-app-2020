@@ -6,12 +6,9 @@ function Header()
     return (
         <div className="header">
             <div>
-                <h1>Search for Most Popular Articles from <span id="nyt">The New York Times</span></h1>
+                <h1><span id="head">Search for Most Popular Articles from  </span><span id="nyt">The New York Times</span></h1>
                 <div>
                     <h3 id="api">API:  <a href="https://developer.nytimes.com/docs/most-popular-product/1/overview" id="api-link">https://developer.nytimes.com/docs/most-popular-product/1/overview</a></h3>
-                    
-                    <h3>step 1. select the period of time</h3>
-                    <h3>step 2. click the button and see the result</h3>
                 </div>
             </div>
         </div>

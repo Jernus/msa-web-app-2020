@@ -1,0 +1,19 @@
+.result
+{
+    font-family: 'Merienda One', cursive;
+    color: #505365;
+}
+
+#name
+{
+    font-family: 'Niconne', cursive;
+    font-size: 200%;
+    color: #49b675;
+}
+
+#day
+{
+    font-family: 'Satisfy', cursive;
+    font-size: 200%;
+    color: crimson;
+}

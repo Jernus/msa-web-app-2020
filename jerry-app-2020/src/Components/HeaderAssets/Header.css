@@ -12,18 +12,20 @@ h1, h3
 
 h1
 {
-    color: #e0e9e9;
+    color: #014574;
 }
 
 #nyt
 {
+    font-family: 'UnifrakturCook', cursive;
     color: #fbb901;
+    font-size: 170%;
 }
 
 #api
 {
     font-family: 'Playball', cursive;
-    color: #e0e9e9;
+    color: #014574;
 }
 
 #api-link
@@ -33,15 +35,25 @@ h1
 
 #api-link:link
 {
-    color: 	#b5f4f4;
+    color: 	#2f92d2;
 }
 
 #api-link:visited
 {
-    color: 	#ffff72;
+    color: 	#39bab5;
 }
 
 #api-link:hover
 {
     color: 	#ce0018;
+}
+
+#head
+{
+    font-family: 'PT Serif', serif;
+}
+
+.steps
+{
+    font-family: 'Kalam', cursive;
 }

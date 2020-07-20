@@ -68,8 +68,9 @@ function SearchBar(props: ISearchBarProps)
 
                 <Grid item xs={6} sm={3} id="time-field">
                     <FormControl>
-                        <InputLabel>Time Period</InputLabel>
-                        <Select 
+                        <InputLabel id="time">Time Period</InputLabel>
+                        <Select
+                            id="time-select" 
                             style={{width: `200px`}}
                             value={TimePeriod}
                             onChange={handleTimePeriodChange}>
@@ -81,7 +82,7 @@ function SearchBar(props: ISearchBarProps)
                 </Grid>
 
                 <Grid item xs={6} sm={1} id="submit-button">
-                    <Button variant="contained" color="primary" onClick={handleSubmit}>
+                    <Button id="submit-button" variant="contained" color="primary" onClick={handleSubmit}>
                         Search
                     </Button>
                 </Grid>

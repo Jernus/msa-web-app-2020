@@ -1,7 +1,6 @@
 .SearchBarContainer
 {
-    margin: auto;
-    margin: 20px;
+    margin: 20px 20px 30px 20px;
     justify-content: center;
 }
 
@@ -15,4 +14,20 @@
 #username-field, #time-field, #submit-button
 {
     margin: 13px;
+}
+
+#username
+{
+    border-radius: 20px;
+}
+
+#username-label, #username, #time, #time-select
+{
+    font-family: 'Caveat', cursive;
+    font-size: 150%;
+}
+
+#submit-button
+{
+    font-family: 'Caveat', cursive;
 }
