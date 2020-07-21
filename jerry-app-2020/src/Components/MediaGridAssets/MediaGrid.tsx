@@ -23,13 +23,13 @@ function MediaGrid(props: IMediaGridProps)
 {
     const [ItemArray, setItemArray] = useState<IState[]>([{media: [], title: '', abstract: '', url: ''}]);
 
-    const API = process.env.REACT_APP_API_KEY;
-
-    console.log("test: " + API);
+    // I store the API key here since it won't work if I store in the env file(since it won't push to the GitHub)
+    // const API = process.env.REACT_APP_API_KEY;
+    const API_KEY = 'wzsBUGCJgcjYHWsEqm5tulawvJjOltXg';
 
     useEffect(() => 
     {
-        fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/' + props.TimePeriod + '.json?api-key=' + API)
+        fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/' + props.TimePeriod + '.json?api-key=' + API_KEY)
             .then(response => response.json())
             .then(response => {
                 setItemArray(response.results)
