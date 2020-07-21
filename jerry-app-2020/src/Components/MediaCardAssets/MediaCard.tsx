@@ -35,7 +35,7 @@ function MediaCard(props: IMediaCardProps)
                     />
                     <CardContent className="card-body">
                         <div>
-                            <Typography gutterBottom variant="h5" component="h2" className="MediaCardTitle">
+                            <Typography gutterBottom variant="h5" component="h2" className="MediaCardTitle" style={{fontSize: `1rem`, fontWeight: `bold`}}>
                                 {props.Title}
                             </Typography>
                         </div>

@@ -23,9 +23,13 @@ function MediaGrid(props: IMediaGridProps)
 {
     const [ItemArray, setItemArray] = useState<IState[]>([{media: [], title: '', abstract: '', url: ''}]);
 
+    const API = process.env.REACT_APP_API_KEY;
+
+    console.log("test: " + API);
+
     useEffect(() => 
     {
-        fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/' + props.TimePeriod + '.json?api-key=wzsBUGCJgcjYHWsEqm5tulawvJjOltXg')
+        fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/' + props.TimePeriod + '.json?api-key=' + API)
             .then(response => response.json())
             .then(response => {
                 setItemArray(response.results)
