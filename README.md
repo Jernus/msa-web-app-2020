@@ -21,9 +21,9 @@ Each Card contains the article's image, title and abstract. User also can click 
 
 
 ## DevOps
-For the DevOps section, I'm using the same GitHub repository(Web App).
+For the DevOps section, I'm using the same GitHub repository(Web App) since I thought it's really useful and helpful to combine two categories.
 
-- First, I add two branches to the trigger section. Therefore, if there any commits and pushes to master or develop branch, the pipeline will start to build and deploy. The virtual machine I choose Linux just like the tutorial use.
+- First, I add two branches to the trigger section. Therefore, if there any commits and pushes to master or develop branch, the pipeline will start to build and deploy. The virtual machine I choose Linux just like the tutorial use. Furthermore, in the artifacts part, I add another filter to enable "develop" continuous deployment trigger.
 
 - Second, I add two variables - rootDir and buildDir - to enhance readability.
 
